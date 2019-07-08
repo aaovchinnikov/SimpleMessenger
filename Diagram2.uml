@@ -10,6 +10,7 @@
     <include xmi:type="uml:Include" xmi:id="_Lh4PMJ92EemHIrfjF8Y4MQ" addition="_5bgA0J9CEemHIrfjF8Y4MQ"/>
   </packagedElement>
   <packagedElement xmi:type="uml:UseCase" xmi:id="_GTeDsJ9BEemHIrfjF8Y4MQ" name="войти в систему">
+    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_zMUPoKGQEemHIrfjF8Y4MQ" name="ExtensionPoint2"/>
     <include xmi:type="uml:Include" xmi:id="_Qj4wgJ92EemHIrfjF8Y4MQ" addition="_IDm5sJ9DEemHIrfjF8Y4MQ"/>
   </packagedElement>
   <packagedElement xmi:type="uml:UseCase" xmi:id="_IMnWoJ9BEemHIrfjF8Y4MQ" name="написать письмо">
@@ -60,5 +61,8 @@
   <packagedElement xmi:type="uml:UseCase" xmi:id="_Cn3sIJ93EemHIrfjF8Y4MQ" name="удалить письмо">
     <extend xmi:type="uml:Extend" xmi:id="_JPbO8J93EemHIrfjF8Y4MQ" extendedCase="_jAD4QJ9zEemHIrfjF8Y4MQ" extensionLocation="_JPbO8Z93EemHIrfjF8Y4MQ"/>
     <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_Hv-OYJ93EemHIrfjF8Y4MQ" name="ExtensionPoint1"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_t5_aYKGQEemHIrfjF8Y4MQ" name="подтвердить личность с помощью SMS кода">
+    <extend xmi:type="uml:Extend" xmi:id="_zMTokKGQEemHIrfjF8Y4MQ" extendedCase="_GTeDsJ9BEemHIrfjF8Y4MQ" extensionLocation="_zMUPoKGQEemHIrfjF8Y4MQ"/>
   </packagedElement>
 </uml:Model>
