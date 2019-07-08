@@ -61,4 +61,5 @@
     <extend xmi:type="uml:Extend" xmi:id="_JPbO8J93EemHIrfjF8Y4MQ" extendedCase="_jAD4QJ9zEemHIrfjF8Y4MQ" extensionLocation="_JPbO8Z93EemHIrfjF8Y4MQ"/>
     <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_Hv-OYJ93EemHIrfjF8Y4MQ" name="ExtensionPoint1"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_cgCQgKGGEemHIrfjF8Y4MQ" name="просто"/>
 </uml:Model>
