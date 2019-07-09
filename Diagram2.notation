@@ -407,22 +407,6 @@
     </edges>
   </notation:Diagram>
   <notation:Diagram xmi:id="_EfFwMKJbEemHIrfjF8Y4MQ" type="UseCase" name="NewUseCaseDiagram" measurementUnit="Pixel">
-    <children xmi:type="notation:Shape" xmi:id="_TwnZgKJbEemHIrfjF8Y4MQ" type="Actor_Shape">
-      <children xmi:type="notation:DecorationNode" xmi:id="_TwnZgqJbEemHIrfjF8Y4MQ" type="Actor_NameLabel">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_TwnZg6JbEemHIrfjF8Y4MQ" y="15"/>
-      </children>
-      <children xmi:type="notation:DecorationNode" xmi:id="_TwnZhKJbEemHIrfjF8Y4MQ" type="Actor_StereotypeLabel">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_TwnZhaJbEemHIrfjF8Y4MQ" x="20" y="100"/>
-      </children>
-      <children xmi:type="notation:DecorationNode" xmi:id="_TwnZhqJbEemHIrfjF8Y4MQ" type="Actor_QualifiedNameLabel">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_TwnZh6JbEemHIrfjF8Y4MQ" x="20" y="80"/>
-      </children>
-      <children xmi:type="notation:DecorationNode" xmi:id="_TwnZiKJbEemHIrfjF8Y4MQ" type="Actor_FloatingNameLabel">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_TwnZiaJbEemHIrfjF8Y4MQ" y="15"/>
-      </children>
-      <element xmi:type="uml:Actor" href="Diagram2.uml#_TwmLYKJbEemHIrfjF8Y4MQ"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TwnZgaJbEemHIrfjF8Y4MQ" x="260" y="220"/>
-    </children>
     <styles xmi:type="notation:StringValueStyle" xmi:id="_EfFwMaJbEemHIrfjF8Y4MQ" name="diagram_compatibility_version" stringValue="1.4.0"/>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_EfFwMqJbEemHIrfjF8Y4MQ"/>
     <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_EfFwM6JbEemHIrfjF8Y4MQ" diagramKindId="org.eclipse.papyrus.uml.diagram.useCase">
