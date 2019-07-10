@@ -67,6 +67,32 @@
     <packagedElement xmi:type="uml:Component" xmi:id="_gPMF4KMSEemKQZ3Ow7yDwQ" name="Messenger"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_8uxJEKMLEemKQZ3Ow7yDwQ" name="Activity Messenger">
-    <packagedElement xmi:type="uml:Activity" xmi:id="_DCKZwKMMEemKQZ3Ow7yDwQ" name="Activity1"/>
+    <packagedElement xmi:type="uml:Activity" xmi:id="_DCKZwKMMEemKQZ3Ow7yDwQ" name="Пользователь" node="_D_Ur8KMUEemKQZ3Ow7yDwQ _AMAyYKMUEemKQZ3Ow7yDwQ _4wPcAKMhEemKQZ3Ow7yDwQ _-LFUEKMhEemKQZ3Ow7yDwQ _Ojfs8KMiEemKQZ3Ow7yDwQ _cAe2gKMiEemKQZ3Ow7yDwQ _io0ccKMiEemKQZ3Ow7yDwQ _951WkKMiEemKQZ3Ow7yDwQ _ImH6IKMjEemKQZ3Ow7yDwQ _jCdPAKMjEemKQZ3Ow7yDwQ _3UXB8KMjEemKQZ3Ow7yDwQ _g6F-4KMkEemKQZ3Ow7yDwQ">
+      <edge xmi:type="uml:ControlFlow" xmi:id="_3PFD4KMkEemKQZ3Ow7yDwQ" target="_D_Ur8KMUEemKQZ3Ow7yDwQ" source="_AMAyYKMUEemKQZ3Ow7yDwQ"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_4k6OYKMkEemKQZ3Ow7yDwQ" target="_4wPcAKMhEemKQZ3Ow7yDwQ" source="_D_Ur8KMUEemKQZ3Ow7yDwQ"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_6YCY4KMkEemKQZ3Ow7yDwQ" target="_-LFUEKMhEemKQZ3Ow7yDwQ" source="_4wPcAKMhEemKQZ3Ow7yDwQ"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_9kE3EKMkEemKQZ3Ow7yDwQ" target="_Ojfs8KMiEemKQZ3Ow7yDwQ" source="_-LFUEKMhEemKQZ3Ow7yDwQ"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="__HDswKMkEemKQZ3Ow7yDwQ" target="_io0ccKMiEemKQZ3Ow7yDwQ" source="_Ojfs8KMiEemKQZ3Ow7yDwQ"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_AjJ3UKMlEemKQZ3Ow7yDwQ" target="_951WkKMiEemKQZ3Ow7yDwQ" source="_io0ccKMiEemKQZ3Ow7yDwQ"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_NEw9wKMlEemKQZ3Ow7yDwQ" target="_ImH6IKMjEemKQZ3Ow7yDwQ" source="_951WkKMiEemKQZ3Ow7yDwQ"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_WPZhUKMlEemKQZ3Ow7yDwQ" target="_jCdPAKMjEemKQZ3Ow7yDwQ" source="_g6F-4KMkEemKQZ3Ow7yDwQ"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_XN0RYKMlEemKQZ3Ow7yDwQ" target="_3UXB8KMjEemKQZ3Ow7yDwQ" source="_jCdPAKMjEemKQZ3Ow7yDwQ"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_YabOcKMlEemKQZ3Ow7yDwQ" target="_g6F-4KMkEemKQZ3Ow7yDwQ" source="_ImH6IKMjEemKQZ3Ow7yDwQ"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_eRGRcKMmEemKQZ3Ow7yDwQ" target="_ImH6IKMjEemKQZ3Ow7yDwQ" source="_g6F-4KMkEemKQZ3Ow7yDwQ"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_g985QKMmEemKQZ3Ow7yDwQ" target="_951WkKMiEemKQZ3Ow7yDwQ" source="_g6F-4KMkEemKQZ3Ow7yDwQ"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_6yGz0KMmEemKQZ3Ow7yDwQ" target="_Ojfs8KMiEemKQZ3Ow7yDwQ" source="_io0ccKMiEemKQZ3Ow7yDwQ"/>
+      <node xmi:type="uml:InitialNode" xmi:id="_AMAyYKMUEemKQZ3Ow7yDwQ" name=" " outgoing="_3PFD4KMkEemKQZ3Ow7yDwQ"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_D_Ur8KMUEemKQZ3Ow7yDwQ" name="установить мессенджер на телефон" incoming="_3PFD4KMkEemKQZ3Ow7yDwQ" outgoing="_4k6OYKMkEemKQZ3Ow7yDwQ"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_4wPcAKMhEemKQZ3Ow7yDwQ" name="открыть приложение" incoming="_4k6OYKMkEemKQZ3Ow7yDwQ" outgoing="_6YCY4KMkEemKQZ3Ow7yDwQ"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_-LFUEKMhEemKQZ3Ow7yDwQ" name="нажать кнопку &quot;Регистрация&quot;" incoming="_6YCY4KMkEemKQZ3Ow7yDwQ" outgoing="_9kE3EKMkEemKQZ3Ow7yDwQ"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_Ojfs8KMiEemKQZ3Ow7yDwQ" name="придумать логин" incoming="_9kE3EKMkEemKQZ3Ow7yDwQ _6yGz0KMmEemKQZ3Ow7yDwQ" outgoing="__HDswKMkEemKQZ3Ow7yDwQ"/>
+      <node xmi:type="uml:CallBehaviorAction" xmi:id="_cAe2gKMiEemKQZ3Ow7yDwQ" name="CallBehaviorAction6" behavior="_DCKZwKMMEemKQZ3Ow7yDwQ"/>
+      <node xmi:type="uml:DecisionNode" xmi:id="_io0ccKMiEemKQZ3Ow7yDwQ" name="[логин удовлетворяет правилам]" incoming="__HDswKMkEemKQZ3Ow7yDwQ" outgoing="_AjJ3UKMlEemKQZ3Ow7yDwQ _6yGz0KMmEemKQZ3Ow7yDwQ"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_951WkKMiEemKQZ3Ow7yDwQ" name="указать номер телефона" incoming="_AjJ3UKMlEemKQZ3Ow7yDwQ _g985QKMmEemKQZ3Ow7yDwQ" outgoing="_NEw9wKMlEemKQZ3Ow7yDwQ"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_ImH6IKMjEemKQZ3Ow7yDwQ" name="подтвердить номер через SMS " incoming="_NEw9wKMlEemKQZ3Ow7yDwQ _eRGRcKMmEemKQZ3Ow7yDwQ" outgoing="_YabOcKMlEemKQZ3Ow7yDwQ"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_jCdPAKMjEemKQZ3Ow7yDwQ" name="создать список контактов" incoming="_WPZhUKMlEemKQZ3Ow7yDwQ" outgoing="_XN0RYKMlEemKQZ3Ow7yDwQ"/>
+      <node xmi:type="uml:ActivityFinalNode" xmi:id="_3UXB8KMjEemKQZ3Ow7yDwQ" name=" " incoming="_XN0RYKMlEemKQZ3Ow7yDwQ"/>
+      <node xmi:type="uml:DecisionNode" xmi:id="_g6F-4KMkEemKQZ3Ow7yDwQ" name="[SMS-код верный]" incoming="_YabOcKMlEemKQZ3Ow7yDwQ" outgoing="_WPZhUKMlEemKQZ3Ow7yDwQ _eRGRcKMmEemKQZ3Ow7yDwQ _g985QKMmEemKQZ3Ow7yDwQ"/>
+    </packagedElement>
   </packagedElement>
 </uml:Model>
