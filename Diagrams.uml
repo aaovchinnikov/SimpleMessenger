@@ -64,5 +64,9 @@
       <extend xmi:type="uml:Extend" xmi:id="_-0eWgKL5EemHIrfjF8Y4MQ" extendedCase="_XFr_AKL3EemHIrfjF8Y4MQ" extensionLocation="_-0fkoKL5EemHIrfjF8Y4MQ"/>
       <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_V5veYqL5EemHIrfjF8Y4MQ" name="ExtensionPoint1"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_gPMF4KMSEemKQZ3Ow7yDwQ" name="Messenger"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_8uxJEKMLEemKQZ3Ow7yDwQ" name="Activity Messenger">
+    <packagedElement xmi:type="uml:Activity" xmi:id="_DCKZwKMMEemKQZ3Ow7yDwQ" name="Activity1"/>
   </packagedElement>
 </uml:Model>
