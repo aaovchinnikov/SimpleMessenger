@@ -3,42 +3,6 @@
   <packageImport xmi:type="uml:PackageImport" xmi:id="_AiC0gJ55EemHIrfjF8Y4MQ">
     <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
   </packageImport>
-  <packagedElement xmi:type="uml:Package" xmi:id="_5q9CwKJbEemHIrfjF8Y4MQ" name="email">
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_GTeDsJ9BEemHIrfjF8Y4MQ" name="войти в систему">
-      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_zMUPoKGQEemHIrfjF8Y4MQ" name="ExtensionPoint2"/>
-      <include xmi:type="uml:Include" xmi:id="_Qj4wgJ92EemHIrfjF8Y4MQ" addition="_IDm5sJ9DEemHIrfjF8Y4MQ"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_IMnWoJ9BEemHIrfjF8Y4MQ" name="написать письмо">
-      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_VVA9MZ92EemHIrfjF8Y4MQ" name="ExtensionPoint1"/>
-      <include xmi:type="uml:Include" xmi:id="_bI2uoJ93EemHIrfjF8Y4MQ" addition="_rTomEJ91EemHIrfjF8Y4MQ"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_3VWMoJ9CEemHIrfjF8Y4MQ" name="придумать логин"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_5bgA0J9CEemHIrfjF8Y4MQ" name="придумать пароль"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_7hakcJ9CEemHIrfjF8Y4MQ" name="указать номер телефона">
-      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_DF13AJ92EemHIrfjF8Y4MQ" name="ExtensionPoint1"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_IDm5sJ9DEemHIrfjF8Y4MQ" name="ввести логин и пароль"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_t5_aYKGQEemHIrfjF8Y4MQ" name="подтвердить личность с помощью SMS кода">
-      <extend xmi:type="uml:Extend" xmi:id="_zMTokKGQEemHIrfjF8Y4MQ" extendedCase="_GTeDsJ9BEemHIrfjF8Y4MQ" extensionLocation="_zMUPoKGQEemHIrfjF8Y4MQ"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_V9nVoJ9zEemHIrfjF8Y4MQ" name="отправить письмо">
-      <generalization xmi:type="uml:Generalization" xmi:id="_jwu_4J92EemHIrfjF8Y4MQ" general="_IMnWoJ9BEemHIrfjF8Y4MQ"/>
-      <include xmi:type="uml:Include" xmi:id="_Ssh4AJ92EemHIrfjF8Y4MQ" addition="_dJlNEJ9zEemHIrfjF8Y4MQ"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_dJlNEJ9zEemHIrfjF8Y4MQ" name="указать получателя"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_jAD4QJ9zEemHIrfjF8Y4MQ" name="сохранить в черновиках">
-      <generalization xmi:type="uml:Generalization" xmi:id="_k3yHgJ92EemHIrfjF8Y4MQ" general="_IMnWoJ9BEemHIrfjF8Y4MQ"/>
-      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_JPbO8Z93EemHIrfjF8Y4MQ" name="ExtensionPoint2"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_pm1GAJ91EemHIrfjF8Y4MQ" name="указать тему письма">
-      <extend xmi:type="uml:Extend" xmi:id="_VVA9MJ92EemHIrfjF8Y4MQ" extendedCase="_IMnWoJ9BEemHIrfjF8Y4MQ" extensionLocation="_VVA9MZ92EemHIrfjF8Y4MQ"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_rTomEJ91EemHIrfjF8Y4MQ" name="написать само сообщение"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_Cn3sIJ93EemHIrfjF8Y4MQ" name="удалить письмо">
-      <extend xmi:type="uml:Extend" xmi:id="_JPbO8J93EemHIrfjF8Y4MQ" extendedCase="_jAD4QJ9zEemHIrfjF8Y4MQ" extensionLocation="_JPbO8Z93EemHIrfjF8Y4MQ"/>
-      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_Hv-OYJ93EemHIrfjF8Y4MQ" name="ExtensionPoint1"/>
-    </packagedElement>
-  </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_H1BigKJhEemHIrfjF8Y4MQ" name="Use Case Messenger">
     <packagedElement xmi:type="uml:Actor" xmi:id="_J7lckKL0EemHIrfjF8Y4MQ" name="Пользователь"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_J7lckaL0EemHIrfjF8Y4MQ" name="зарегистрироваться">
@@ -82,7 +46,6 @@
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_J7n416L0EemHIrfjF8Y4MQ" name="написать само сообщение"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_XFr_AKL3EemHIrfjF8Y4MQ" name="получить сообщение">
-      <extend xmi:type="uml:Extend" xmi:id="_XFr_AaL3EemHIrfjF8Y4MQ" extendedCase="_GTeDsJ9BEemHIrfjF8Y4MQ" extensionLocation="_zMUPoKGQEemHIrfjF8Y4MQ"/>
       <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_j14CEKL5EemHIrfjF8Y4MQ" name="ExtensionPoint2"/>
       <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_-0fkoKL5EemHIrfjF8Y4MQ" name="ExtensionPoint3"/>
     </packagedElement>
@@ -94,12 +57,10 @@
       <ownedEnd xmi:type="uml:Property" xmi:id="_K9C8xKL4EemHIrfjF8Y4MQ" name="зарегистрироваться" type="_XFr_AKL3EemHIrfjF8Y4MQ" association="_K9C8wKL4EemHIrfjF8Y4MQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_Ua6v8KL5EemHIrfjF8Y4MQ" name="ответить на сообщение">
-      <extend xmi:type="uml:Extend" xmi:id="_Ua6v8aL5EemHIrfjF8Y4MQ" extendedCase="_jAD4QJ9zEemHIrfjF8Y4MQ" extensionLocation="_JPbO8Z93EemHIrfjF8Y4MQ"/>
       <extend xmi:type="uml:Extend" xmi:id="_j12z8KL5EemHIrfjF8Y4MQ" extendedCase="_XFr_AKL3EemHIrfjF8Y4MQ" extensionLocation="_j14CEKL5EemHIrfjF8Y4MQ"/>
       <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_Ua6v8qL5EemHIrfjF8Y4MQ" name="ExtensionPoint1"/>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_V5veYKL5EemHIrfjF8Y4MQ" name="прочитать сообщение">
-      <extend xmi:type="uml:Extend" xmi:id="_V5veYaL5EemHIrfjF8Y4MQ" extendedCase="_jAD4QJ9zEemHIrfjF8Y4MQ" extensionLocation="_JPbO8Z93EemHIrfjF8Y4MQ"/>
       <extend xmi:type="uml:Extend" xmi:id="_-0eWgKL5EemHIrfjF8Y4MQ" extendedCase="_XFr_AKL3EemHIrfjF8Y4MQ" extensionLocation="_-0fkoKL5EemHIrfjF8Y4MQ"/>
       <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_V5veYqL5EemHIrfjF8Y4MQ" name="ExtensionPoint1"/>
     </packagedElement>
