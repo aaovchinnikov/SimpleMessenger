@@ -15,7 +15,6 @@
     <packagedElement xmi:type="uml:UseCase" xmi:id="_3VWMoJ9CEemHIrfjF8Y4MQ" name="придумать логин"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_5bgA0J9CEemHIrfjF8Y4MQ" name="придумать пароль"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_7hakcJ9CEemHIrfjF8Y4MQ" name="указать номер телефона">
-      <extend xmi:type="uml:Extend" xmi:id="_iEZLcKL7EemHIrfjF8Y4MQ" extendedCase="_YTJT0KL7EemHIrfjF8Y4MQ" extensionLocation="_iEZygKL7EemHIrfjF8Y4MQ"/>
       <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_DF13AJ92EemHIrfjF8Y4MQ" name="ExtensionPoint1"/>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_IDm5sJ9DEemHIrfjF8Y4MQ" name="ввести логин и пароль"/>
@@ -104,32 +103,5 @@
       <extend xmi:type="uml:Extend" xmi:id="_-0eWgKL5EemHIrfjF8Y4MQ" extendedCase="_XFr_AKL3EemHIrfjF8Y4MQ" extensionLocation="_-0fkoKL5EemHIrfjF8Y4MQ"/>
       <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_V5veYqL5EemHIrfjF8Y4MQ" name="ExtensionPoint1"/>
     </packagedElement>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Actor" xmi:id="_VD9bAKL7EemHIrfjF8Y4MQ" name="Пользователь"/>
-  <packagedElement xmi:type="uml:UseCase" xmi:id="_YTJT0KL7EemHIrfjF8Y4MQ" name="зарегистрироваться">
-    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_iEZygKL7EemHIrfjF8Y4MQ" name="ExtensionPoint3"/>
-    <include xmi:type="uml:Include" xmi:id="_geT-cKL7EemHIrfjF8Y4MQ" addition="_3VWMoJ9CEemHIrfjF8Y4MQ"/>
-    <include xmi:type="uml:Include" xmi:id="_hROpIKL7EemHIrfjF8Y4MQ" addition="_5bgA0J9CEemHIrfjF8Y4MQ"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_a3L94KL7EemHIrfjF8Y4MQ" memberEnd="_a3NMAKL7EemHIrfjF8Y4MQ _a3NMAaL7EemHIrfjF8Y4MQ">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_a3Mk8KL7EemHIrfjF8Y4MQ" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_a3Mk8aL7EemHIrfjF8Y4MQ" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_a3NMAKL7EemHIrfjF8Y4MQ" name="написать письмо" type="_IMnWoJ9BEemHIrfjF8Y4MQ" association="_a3L94KL7EemHIrfjF8Y4MQ"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_a3NMAaL7EemHIrfjF8Y4MQ" name="пользователь" type="_VD9bAKL7EemHIrfjF8Y4MQ" association="_a3L94KL7EemHIrfjF8Y4MQ"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_bvuIYKL7EemHIrfjF8Y4MQ" memberEnd="_bvuvcqL7EemHIrfjF8Y4MQ _bvuvc6L7EemHIrfjF8Y4MQ">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_bvuvcKL7EemHIrfjF8Y4MQ" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_bvuvcaL7EemHIrfjF8Y4MQ" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_bvuvcqL7EemHIrfjF8Y4MQ" name="зарегистрироваться" type="_YTJT0KL7EemHIrfjF8Y4MQ" association="_bvuIYKL7EemHIrfjF8Y4MQ"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_bvuvc6L7EemHIrfjF8Y4MQ" name="пользователь" type="_VD9bAKL7EemHIrfjF8Y4MQ" association="_bvuIYKL7EemHIrfjF8Y4MQ"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_dZjM8KL7EemHIrfjF8Y4MQ" memberEnd="_dZkbEqL7EemHIrfjF8Y4MQ _dZkbE6L7EemHIrfjF8Y4MQ">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dZkbEKL7EemHIrfjF8Y4MQ" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dZkbEaL7EemHIrfjF8Y4MQ" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_dZkbEqL7EemHIrfjF8Y4MQ" name="войти в систему" type="_GTeDsJ9BEemHIrfjF8Y4MQ" association="_dZjM8KL7EemHIrfjF8Y4MQ"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_dZkbE6L7EemHIrfjF8Y4MQ" name="пользователь" type="_VD9bAKL7EemHIrfjF8Y4MQ" association="_dZjM8KL7EemHIrfjF8Y4MQ"/>
   </packagedElement>
 </uml:Model>
