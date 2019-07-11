@@ -311,7 +311,7 @@
       <node xmi:type="uml:OpaqueAction" xmi:id="_2XoioKPhEemdYs883e5IJg" name="отправить сообщение на сервер получателя" incoming="_5B7lsKPhEemdYs883e5IJg" outgoing="_NJV_4KPiEemdYs883e5IJg" inPartition="_tqWpcKPhEemdYs883e5IJg"/>
       <node xmi:type="uml:JoinNode" xmi:id="_77hB8KPhEemdYs883e5IJg" incoming="_LgDt4KPiEemdYs883e5IJg _NJV_4KPiEemdYs883e5IJg" outgoing="_S7MCsKPiEemdYs883e5IJg" inPartition="_zYp68KPfEemdYs883e5IJg"/>
       <node xmi:type="uml:OpaqueAction" xmi:id="_AnheEKPiEemdYs883e5IJg" name="закрыть приложение" incoming="_D-I0kKPiEemdYs883e5IJg" outgoing="_LgDt4KPiEemdYs883e5IJg"/>
-      <node xmi:type="uml:ActivityFinalNode" xmi:id="_SKBrgKPiEemdYs883e5IJg" name="ActivityFinalNode30" incoming="_S7MCsKPiEemdYs883e5IJg" inPartition="_zYp68KPfEemdYs883e5IJg"/>
+      <node xmi:type="uml:ActivityFinalNode" xmi:id="_SKBrgKPiEemdYs883e5IJg" incoming="_S7MCsKPiEemdYs883e5IJg" inPartition="_zYp68KPfEemdYs883e5IJg"/>
     </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_Pkz0MKPLEemKQZ3Ow7yDwQ" name="Activity Receiving">

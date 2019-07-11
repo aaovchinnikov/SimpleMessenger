@@ -3673,7 +3673,7 @@
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wRDQ36PfEemdYs883e5IJg"/>
       </children>
       <children xmi:type="notation:BasicCompartment" xmi:id="_wRDQ4KPfEemdYs883e5IJg" type="Activity_ActivityNodeCompartment">
-        <children xmi:type="notation:Shape" xmi:id="_zY39YKPfEemdYs883e5IJg" type="ActivityPartition_Shape">
+        <children xmi:type="notation:Shape" xmi:id="_zY39YKPfEemdYs883e5IJg" type="ActivityPartition_Shape" fillColor="8905185">
           <children xmi:type="notation:DecorationNode" xmi:id="_zY4kcKPfEemdYs883e5IJg" type="ActivityPartition_NameLabel"/>
           <children xmi:type="notation:DecorationNode" xmi:id="_zY4kcaPfEemdYs883e5IJg" type="ActivityPartition_FloatingNameLabel">
             <layoutConstraint xmi:type="notation:Location" xmi:id="_zY4kcqPfEemdYs883e5IJg" y="15"/>
@@ -3775,7 +3775,7 @@
           <element xmi:type="uml:ActivityPartition" href="Diagrams.uml#_zYp68KPfEemdYs883e5IJg"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zY39YaPfEemdYs883e5IJg" x="35" y="8" width="1281" height="281"/>
         </children>
-        <children xmi:type="notation:Shape" xmi:id="_1uSVkKPfEemdYs883e5IJg" type="ActivityPartition_Shape" gradient="16777215, -1, 0">
+        <children xmi:type="notation:Shape" xmi:id="_1uSVkKPfEemdYs883e5IJg" type="ActivityPartition_Shape" fillColor="8905185" gradient="16777215, -1, 0">
           <children xmi:type="notation:DecorationNode" xmi:id="_1uS8oKPfEemdYs883e5IJg" type="ActivityPartition_NameLabel"/>
           <children xmi:type="notation:DecorationNode" xmi:id="_1uS8oaPfEemdYs883e5IJg" type="ActivityPartition_FloatingNameLabel">
             <layoutConstraint xmi:type="notation:Location" xmi:id="_1uS8oqPfEemdYs883e5IJg" y="15"/>
@@ -3815,7 +3815,7 @@
           <element xmi:type="uml:ActivityPartition" href="Diagrams.uml#_1uKZwKPfEemdYs883e5IJg"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1uSVkaPfEemdYs883e5IJg" x="35" y="288" width="1281" height="201"/>
         </children>
-        <children xmi:type="notation:Shape" xmi:id="_tql6AKPhEemdYs883e5IJg" type="ActivityPartition_Shape">
+        <children xmi:type="notation:Shape" xmi:id="_tql6AKPhEemdYs883e5IJg" type="ActivityPartition_Shape" fillColor="8905185">
           <children xmi:type="notation:DecorationNode" xmi:id="_tql6AqPhEemdYs883e5IJg" type="ActivityPartition_NameLabel"/>
           <children xmi:type="notation:DecorationNode" xmi:id="_tqmhEKPhEemdYs883e5IJg" type="ActivityPartition_FloatingNameLabel">
             <layoutConstraint xmi:type="notation:Location" xmi:id="_tqmhEaPhEemdYs883e5IJg" y="15"/>
