@@ -287,36 +287,37 @@
     </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_Pkz0MKPLEemKQZ3Ow7yDwQ" name="Activity Receiving">
-    <packagedElement xmi:type="uml:Activity" xmi:id="_UA3IwKPLEemKQZ3Ow7yDwQ" name="Пользователь" node="_nRj9YKPLEemKQZ3Ow7yDwQ _53IC8KPOEemKQZ3Ow7yDwQ _E2bCEKPPEemKQZ3Ow7yDwQ _XHdwgKPPEemKQZ3Ow7yDwQ _gUmOcKPPEemKQZ3Ow7yDwQ _lO1T0KPPEemKQZ3Ow7yDwQ _qBiN0KPPEemKQZ3Ow7yDwQ _yLCEgKPPEemKQZ3Ow7yDwQ">
-      <ownedBehavior xmi:type="uml:Activity" xmi:id="_tw1G4KPLEemKQZ3Ow7yDwQ" name="Приложение" node="_9Q4CcKPNEemKQZ3Ow7yDwQ">
-        <edge xmi:type="uml:ControlFlow" xmi:id="_c0mu8KPOEemKQZ3Ow7yDwQ" target="_yLCEgKPPEemKQZ3Ow7yDwQ" source="_9Q4CcKPNEemKQZ3Ow7yDwQ"/>
-        <node xmi:type="uml:OpaqueAction" xmi:id="_9Q4CcKPNEemKQZ3Ow7yDwQ" name="отобразить уведомление о новом сообщении" incoming="_P-4ZsKPOEemKQZ3Ow7yDwQ" outgoing="_c0mu8KPOEemKQZ3Ow7yDwQ"/>
-      </ownedBehavior>
-      <ownedBehavior xmi:type="uml:Activity" xmi:id="_zjdM0KPLEemKQZ3Ow7yDwQ" name="Сервер получателя" node="_dNqPgKPLEemKQZ3Ow7yDwQ _qjvqYKPMEemKQZ3Ow7yDwQ _GVAVYKPOEemKQZ3Ow7yDwQ">
-        <edge xmi:type="uml:ControlFlow" xmi:id="_i8r88KPNEemKQZ3Ow7yDwQ" target="_qjvqYKPMEemKQZ3Ow7yDwQ" source="_dNqPgKPLEemKQZ3Ow7yDwQ"/>
-        <edge xmi:type="uml:ControlFlow" xmi:id="_OFcy4KPOEemKQZ3Ow7yDwQ" target="_GVAVYKPOEemKQZ3Ow7yDwQ" source="_qjvqYKPMEemKQZ3Ow7yDwQ"/>
-        <edge xmi:type="uml:ControlFlow" xmi:id="_P-4ZsKPOEemKQZ3Ow7yDwQ" target="_9Q4CcKPNEemKQZ3Ow7yDwQ" source="_GVAVYKPOEemKQZ3Ow7yDwQ"/>
-        <node xmi:type="uml:InitialNode" xmi:id="_dNqPgKPLEemKQZ3Ow7yDwQ" name=" " outgoing="_i8r88KPNEemKQZ3Ow7yDwQ"/>
-        <node xmi:type="uml:OpaqueAction" xmi:id="_qjvqYKPMEemKQZ3Ow7yDwQ" name="принять сообщение от сервера отправителя" incoming="_i8r88KPNEemKQZ3Ow7yDwQ" outgoing="_OFcy4KPOEemKQZ3Ow7yDwQ"/>
-        <node xmi:type="uml:OpaqueAction" xmi:id="_GVAVYKPOEemKQZ3Ow7yDwQ" name="переслать сообщение на мобильное устройство" incoming="_OFcy4KPOEemKQZ3Ow7yDwQ" outgoing="_P-4ZsKPOEemKQZ3Ow7yDwQ"/>
-      </ownedBehavior>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_VkoPUKPQEemKQZ3Ow7yDwQ" target="_qBiN0KPPEemKQZ3Ow7yDwQ" source="_lO1T0KPPEemKQZ3Ow7yDwQ"/>
+    <packagedElement xmi:type="uml:Activity" xmi:id="_UA3IwKPLEemKQZ3Ow7yDwQ" name="Получить сообщение" node="_nRj9YKPLEemKQZ3Ow7yDwQ _53IC8KPOEemKQZ3Ow7yDwQ _E2bCEKPPEemKQZ3Ow7yDwQ _XHdwgKPPEemKQZ3Ow7yDwQ _gUmOcKPPEemKQZ3Ow7yDwQ _lO1T0KPPEemKQZ3Ow7yDwQ _qBiN0KPPEemKQZ3Ow7yDwQ _yLCEgKPPEemKQZ3Ow7yDwQ _dNqPgKPLEemKQZ3Ow7yDwQ _qjvqYKPMEemKQZ3Ow7yDwQ _GVAVYKPOEemKQZ3Ow7yDwQ _9Q4CcKPNEemKQZ3Ow7yDwQ _3DiAsKQgEemKQZ3Ow7yDwQ" group="_Iv9GgKQeEemKQZ3Ow7yDwQ _V6B7IKQeEemKQZ3Ow7yDwQ _zc01MKQfEemKQZ3Ow7yDwQ">
       <edge xmi:type="uml:ControlFlow" xmi:id="_WOlyUKPQEemKQZ3Ow7yDwQ" target="_lO1T0KPPEemKQZ3Ow7yDwQ" source="_gUmOcKPPEemKQZ3Ow7yDwQ"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_W0lbUKPQEemKQZ3Ow7yDwQ" target="_gUmOcKPPEemKQZ3Ow7yDwQ" source="_XHdwgKPPEemKQZ3Ow7yDwQ"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_YiKXcKPQEemKQZ3Ow7yDwQ" target="_XHdwgKPPEemKQZ3Ow7yDwQ" source="_E2bCEKPPEemKQZ3Ow7yDwQ"/>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_ZFsiUKPQEemKQZ3Ow7yDwQ" target="_E2bCEKPPEemKQZ3Ow7yDwQ" source="_53IC8KPOEemKQZ3Ow7yDwQ"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_ZxjiwKPQEemKQZ3Ow7yDwQ" target="_53IC8KPOEemKQZ3Ow7yDwQ" source="_nRj9YKPLEemKQZ3Ow7yDwQ"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_abX70KPQEemKQZ3Ow7yDwQ" target="_nRj9YKPLEemKQZ3Ow7yDwQ" source="_yLCEgKPPEemKQZ3Ow7yDwQ"/>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_caVi4KPQEemKQZ3Ow7yDwQ" target="_qBiN0KPPEemKQZ3Ow7yDwQ" source="_yLCEgKPPEemKQZ3Ow7yDwQ"/>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_wwIXUKPQEemKQZ3Ow7yDwQ" target="_qBiN0KPPEemKQZ3Ow7yDwQ" source="_XHdwgKPPEemKQZ3Ow7yDwQ"/>
-      <node xmi:type="uml:OpaqueAction" xmi:id="_nRj9YKPLEemKQZ3Ow7yDwQ" name="открыть приложение" incoming="_abX70KPQEemKQZ3Ow7yDwQ" outgoing="_ZxjiwKPQEemKQZ3Ow7yDwQ"/>
-      <node xmi:type="uml:OpaqueAction" xmi:id="_53IC8KPOEemKQZ3Ow7yDwQ" name="перейти в чат" incoming="_ZxjiwKPQEemKQZ3Ow7yDwQ" outgoing="_ZFsiUKPQEemKQZ3Ow7yDwQ"/>
-      <node xmi:type="uml:OpaqueAction" xmi:id="_E2bCEKPPEemKQZ3Ow7yDwQ" name="прочитать сообщение" incoming="_ZFsiUKPQEemKQZ3Ow7yDwQ" outgoing="_YiKXcKPQEemKQZ3Ow7yDwQ"/>
-      <node xmi:type="uml:DecisionNode" xmi:id="_XHdwgKPPEemKQZ3Ow7yDwQ" name="[хочет ответить]" incoming="_YiKXcKPQEemKQZ3Ow7yDwQ" outgoing="_W0lbUKPQEemKQZ3Ow7yDwQ _wwIXUKPQEemKQZ3Ow7yDwQ"/>
-      <node xmi:type="uml:OpaqueAction" xmi:id="_gUmOcKPPEemKQZ3Ow7yDwQ" name="ответить на сообщение" incoming="_W0lbUKPQEemKQZ3Ow7yDwQ" outgoing="_WOlyUKPQEemKQZ3Ow7yDwQ"/>
-      <node xmi:type="uml:OpaqueAction" xmi:id="_lO1T0KPPEemKQZ3Ow7yDwQ" name="закрыть приложение" incoming="_WOlyUKPQEemKQZ3Ow7yDwQ" outgoing="_VkoPUKPQEemKQZ3Ow7yDwQ"/>
-      <node xmi:type="uml:ActivityFinalNode" xmi:id="_qBiN0KPPEemKQZ3Ow7yDwQ" name=" " incoming="_VkoPUKPQEemKQZ3Ow7yDwQ _caVi4KPQEemKQZ3Ow7yDwQ _wwIXUKPQEemKQZ3Ow7yDwQ"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_caVi4KPQEemKQZ3Ow7yDwQ" target="_lO1T0KPPEemKQZ3Ow7yDwQ" source="_yLCEgKPPEemKQZ3Ow7yDwQ"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_wwIXUKPQEemKQZ3Ow7yDwQ" target="_lO1T0KPPEemKQZ3Ow7yDwQ" source="_XHdwgKPPEemKQZ3Ow7yDwQ"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_i8r88KPNEemKQZ3Ow7yDwQ" target="_qjvqYKPMEemKQZ3Ow7yDwQ" source="_dNqPgKPLEemKQZ3Ow7yDwQ"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_OFcy4KPOEemKQZ3Ow7yDwQ" target="_GVAVYKPOEemKQZ3Ow7yDwQ" source="_qjvqYKPMEemKQZ3Ow7yDwQ"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_c0mu8KPOEemKQZ3Ow7yDwQ" target="_yLCEgKPPEemKQZ3Ow7yDwQ" source="_9Q4CcKPNEemKQZ3Ow7yDwQ"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_YZSg8KQgEemKQZ3Ow7yDwQ" target="_9Q4CcKPNEemKQZ3Ow7yDwQ" source="_GVAVYKPOEemKQZ3Ow7yDwQ"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_7kbZAKQgEemKQZ3Ow7yDwQ" target="_3DiAsKQgEemKQZ3Ow7yDwQ" source="_53IC8KPOEemKQZ3Ow7yDwQ"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_9l9y8KQgEemKQZ3Ow7yDwQ" target="_E2bCEKPPEemKQZ3Ow7yDwQ" source="_3DiAsKQgEemKQZ3Ow7yDwQ"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_eR4PgKQhEemKQZ3Ow7yDwQ" target="_qBiN0KPPEemKQZ3Ow7yDwQ" source="_lO1T0KPPEemKQZ3Ow7yDwQ"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_Iv9GgKQeEemKQZ3Ow7yDwQ" name="Сервер" node="_dNqPgKPLEemKQZ3Ow7yDwQ _qjvqYKPMEemKQZ3Ow7yDwQ _GVAVYKPOEemKQZ3Ow7yDwQ"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_V6B7IKQeEemKQZ3Ow7yDwQ" name="Приложение" node="_9Q4CcKPNEemKQZ3Ow7yDwQ _3DiAsKQgEemKQZ3Ow7yDwQ"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_zc01MKQfEemKQZ3Ow7yDwQ" name="Пользователь" node="_nRj9YKPLEemKQZ3Ow7yDwQ _53IC8KPOEemKQZ3Ow7yDwQ _E2bCEKPPEemKQZ3Ow7yDwQ _XHdwgKPPEemKQZ3Ow7yDwQ _gUmOcKPPEemKQZ3Ow7yDwQ _lO1T0KPPEemKQZ3Ow7yDwQ _qBiN0KPPEemKQZ3Ow7yDwQ"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_nRj9YKPLEemKQZ3Ow7yDwQ" name="открыть приложение" incoming="_abX70KPQEemKQZ3Ow7yDwQ" outgoing="_ZxjiwKPQEemKQZ3Ow7yDwQ" inPartition="_zc01MKQfEemKQZ3Ow7yDwQ"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_53IC8KPOEemKQZ3Ow7yDwQ" name="перейти в чат" incoming="_ZxjiwKPQEemKQZ3Ow7yDwQ" outgoing="_7kbZAKQgEemKQZ3Ow7yDwQ" inPartition="_zc01MKQfEemKQZ3Ow7yDwQ"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_E2bCEKPPEemKQZ3Ow7yDwQ" name="прочитать сообщение" incoming="_9l9y8KQgEemKQZ3Ow7yDwQ" outgoing="_YiKXcKPQEemKQZ3Ow7yDwQ" inPartition="_zc01MKQfEemKQZ3Ow7yDwQ"/>
+      <node xmi:type="uml:DecisionNode" xmi:id="_XHdwgKPPEemKQZ3Ow7yDwQ" name="[хочет ответить]" incoming="_YiKXcKPQEemKQZ3Ow7yDwQ" outgoing="_W0lbUKPQEemKQZ3Ow7yDwQ _wwIXUKPQEemKQZ3Ow7yDwQ" inPartition="_zc01MKQfEemKQZ3Ow7yDwQ"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_gUmOcKPPEemKQZ3Ow7yDwQ" name="ответить на сообщение" incoming="_W0lbUKPQEemKQZ3Ow7yDwQ" outgoing="_WOlyUKPQEemKQZ3Ow7yDwQ" inPartition="_zc01MKQfEemKQZ3Ow7yDwQ"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_lO1T0KPPEemKQZ3Ow7yDwQ" name="закрыть приложение" incoming="_WOlyUKPQEemKQZ3Ow7yDwQ _wwIXUKPQEemKQZ3Ow7yDwQ _caVi4KPQEemKQZ3Ow7yDwQ" outgoing="_eR4PgKQhEemKQZ3Ow7yDwQ" inPartition="_zc01MKQfEemKQZ3Ow7yDwQ"/>
+      <node xmi:type="uml:ActivityFinalNode" xmi:id="_qBiN0KPPEemKQZ3Ow7yDwQ" name=" " incoming="_eR4PgKQhEemKQZ3Ow7yDwQ" inPartition="_zc01MKQfEemKQZ3Ow7yDwQ"/>
       <node xmi:type="uml:DecisionNode" xmi:id="_yLCEgKPPEemKQZ3Ow7yDwQ" name="[хочет прочитать сообщение]" incoming="_c0mu8KPOEemKQZ3Ow7yDwQ" outgoing="_abX70KPQEemKQZ3Ow7yDwQ _caVi4KPQEemKQZ3Ow7yDwQ"/>
+      <node xmi:type="uml:InitialNode" xmi:id="_dNqPgKPLEemKQZ3Ow7yDwQ" name=" " outgoing="_i8r88KPNEemKQZ3Ow7yDwQ" inPartition="_Iv9GgKQeEemKQZ3Ow7yDwQ"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_qjvqYKPMEemKQZ3Ow7yDwQ" name="принять сообщение" incoming="_i8r88KPNEemKQZ3Ow7yDwQ" outgoing="_OFcy4KPOEemKQZ3Ow7yDwQ" inPartition="_Iv9GgKQeEemKQZ3Ow7yDwQ"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_GVAVYKPOEemKQZ3Ow7yDwQ" name="переслать сообщение на мобильное устройство" incoming="_OFcy4KPOEemKQZ3Ow7yDwQ" outgoing="_YZSg8KQgEemKQZ3Ow7yDwQ" inPartition="_Iv9GgKQeEemKQZ3Ow7yDwQ"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_9Q4CcKPNEemKQZ3Ow7yDwQ" name="отобразить уведомление о новом сообщении" incoming="_YZSg8KQgEemKQZ3Ow7yDwQ" outgoing="_c0mu8KPOEemKQZ3Ow7yDwQ" inPartition="_V6B7IKQeEemKQZ3Ow7yDwQ"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_3DiAsKQgEemKQZ3Ow7yDwQ" name="отобразить чат" incoming="_7kbZAKQgEemKQZ3Ow7yDwQ" outgoing="_9l9y8KQgEemKQZ3Ow7yDwQ" inPartition="_V6B7IKQeEemKQZ3Ow7yDwQ"/>
     </packagedElement>
   </packagedElement>
 </uml:Model>
