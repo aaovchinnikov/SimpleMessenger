@@ -338,22 +338,21 @@
       <ownedAttribute xmi:type="uml:Property" xmi:id="_lRSLwKe9EemKQZ3Ow7yDwQ" name="login" visibility="public">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_5aLvgKfEEemKQZ3Ow7yDwQ" name="server" type="_--II8KezEemKQZ3Ow7yDwQ" association="_5aDMoKfEEemKQZ3Ow7yDwQ"/>
       <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_JenykKe8EemKQZ3Ow7yDwQ" client="_7xspMKezEemKQZ3Ow7yDwQ" supplier="_0Nxn8Ke3EemKQZ3Ow7yDwQ" contract="_0Nxn8Ke3EemKQZ3Ow7yDwQ"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_-tKlsKe8EemKQZ3Ow7yDwQ" name="send_message"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_DEcvAKe9EemKQZ3Ow7yDwQ" name="receive_message"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_--II8KezEemKQZ3Ow7yDwQ" name="Server">
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_6dJ-gqe7EemKQZ3Ow7yDwQ" name="client" type="_7xspMKezEemKQZ3Ow7yDwQ" association="_6dIwYKe7EemKQZ3Ow7yDwQ">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kirAAKfCEemKQZ3Ow7yDwQ" value="2"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BxkAQKe8EemKQZ3Ow7yDwQ" value="*"/>
-      </ownedAttribute>
-    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_--II8KezEemKQZ3Ow7yDwQ" name="Server"/>
     <packagedElement xmi:type="uml:Interface" xmi:id="_0Nxn8Ke3EemKQZ3Ow7yDwQ" name="IApplication"/>
-    <packagedElement xmi:type="uml:Association" xmi:id="_6dIwYKe7EemKQZ3Ow7yDwQ" visibility="package" memberEnd="_6dJ-gqe7EemKQZ3Ow7yDwQ _6dKlkKe7EemKQZ3Ow7yDwQ">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6dJ-gKe7EemKQZ3Ow7yDwQ" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6dJ-gae7EemKQZ3Ow7yDwQ" key="nature" value="UML_Nature"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_5aDMoKfEEemKQZ3Ow7yDwQ" visibility="protected" memberEnd="_5aLvgKfEEemKQZ3Ow7yDwQ _5aMWkqfEEemKQZ3Ow7yDwQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5aEawKfEEemKQZ3Ow7yDwQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5aEawafEEemKQZ3Ow7yDwQ" key="nature" value="UML_Nature"/>
       </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_6dKlkKe7EemKQZ3Ow7yDwQ" name="server" type="_--II8KezEemKQZ3Ow7yDwQ" association="_6dIwYKe7EemKQZ3Ow7yDwQ"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_5aMWkqfEEemKQZ3Ow7yDwQ" name="client" type="_7xspMKezEemKQZ3Ow7yDwQ" association="_5aDMoKfEEemKQZ3Ow7yDwQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_B5v80KfFEemKQZ3Ow7yDwQ" value="2"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_B5znMKfFEemKQZ3Ow7yDwQ" value="*"/>
+      </ownedEnd>
     </packagedElement>
   </packagedElement>
   <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Pcb_YKe9EemKQZ3Ow7yDwQ">
