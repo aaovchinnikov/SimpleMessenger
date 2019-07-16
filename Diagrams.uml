@@ -320,4 +320,45 @@
       <node xmi:type="uml:OpaqueAction" xmi:id="_3DiAsKQgEemKQZ3Ow7yDwQ" name="отобразить чат" incoming="_7kbZAKQgEemKQZ3Ow7yDwQ" outgoing="_9l9y8KQgEemKQZ3Ow7yDwQ" inPartition="_V6B7IKQeEemKQZ3Ow7yDwQ"/>
     </packagedElement>
   </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_9uglIKb4EemKQZ3Ow7yDwQ" name="Component">
+    <packagedElement xmi:type="uml:Component" xmi:id="_XONuIKcDEemKQZ3Ow7yDwQ" name="client.py">
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_TgyDAKcXEemKQZ3Ow7yDwQ" client="_XONuIKcDEemKQZ3Ow7yDwQ" supplier="_bnQyAKcDEemKQZ3Ow7yDwQ" contract="_bnQyAKcDEemKQZ3Ow7yDwQ"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_nBWnAKcUEemKQZ3Ow7yDwQ" client="_XONuIKcDEemKQZ3Ow7yDwQ" supplier="_ZDE-AKcDEemKQZ3Ow7yDwQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_ZDE-AKcDEemKQZ3Ow7yDwQ" name="server.py"/>
+    <packagedElement xmi:type="uml:Component" xmi:id="_aR4TcKcDEemKQZ3Ow7yDwQ" name="client.py">
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_P5XQYKcXEemKQZ3Ow7yDwQ" client="_aR4TcKcDEemKQZ3Ow7yDwQ" supplier="_eOWwEKcDEemKQZ3Ow7yDwQ" contract="_eOWwEKcDEemKQZ3Ow7yDwQ"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_lg6H8KcUEemKQZ3Ow7yDwQ" client="_aR4TcKcDEemKQZ3Ow7yDwQ" supplier="_ZDE-AKcDEemKQZ3Ow7yDwQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_bnQyAKcDEemKQZ3Ow7yDwQ" name="IApplication"/>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_eOWwEKcDEemKQZ3Ow7yDwQ" name="IApplication"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_iZb14KeyEemKQZ3Ow7yDwQ" name="Class">
+    <packagedElement xmi:type="uml:Class" xmi:id="_7xspMKezEemKQZ3Ow7yDwQ" name="Client">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_lRSLwKe9EemKQZ3Ow7yDwQ" name="login" visibility="public">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_5aLvgKfEEemKQZ3Ow7yDwQ" name="server" type="_--II8KezEemKQZ3Ow7yDwQ" association="_5aDMoKfEEemKQZ3Ow7yDwQ"/>
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_JenykKe8EemKQZ3Ow7yDwQ" client="_7xspMKezEemKQZ3Ow7yDwQ" supplier="_0Nxn8Ke3EemKQZ3Ow7yDwQ" contract="_0Nxn8Ke3EemKQZ3Ow7yDwQ"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_-tKlsKe8EemKQZ3Ow7yDwQ" name="send_message"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_DEcvAKe9EemKQZ3Ow7yDwQ" name="receive_message"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_--II8KezEemKQZ3Ow7yDwQ" name="Server"/>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_0Nxn8Ke3EemKQZ3Ow7yDwQ" name="IApplication"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_5aDMoKfEEemKQZ3Ow7yDwQ" visibility="protected" memberEnd="_5aLvgKfEEemKQZ3Ow7yDwQ _5aMWkqfEEemKQZ3Ow7yDwQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5aEawKfEEemKQZ3Ow7yDwQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5aEawafEEemKQZ3Ow7yDwQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_5aMWkqfEEemKQZ3Ow7yDwQ" name="client" type="_7xspMKezEemKQZ3Ow7yDwQ" association="_5aDMoKfEEemKQZ3Ow7yDwQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_B5v80KfFEemKQZ3Ow7yDwQ" value="2"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_B5znMKfFEemKQZ3Ow7yDwQ" value="*"/>
+      </ownedEnd>
+    </packagedElement>
+  </packagedElement>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Pcb_YKe9EemKQZ3Ow7yDwQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_PdV-UKe9EemKQZ3Ow7yDwQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+  </profileApplication>
 </uml:Model>
