@@ -4635,7 +4635,7 @@
   <notation:Diagram xmi:id="_a-IHgKlKEemKEInn1d0oDQ" type="PapyrusUMLStateMachineDiagram" name="State Machine Diagram" measurementUnit="Pixel">
     <children xmi:type="notation:Shape" xmi:id="_a-IHgalKEemKEInn1d0oDQ" type="StateMachine_Shape">
       <children xmi:type="notation:DecorationNode" xmi:id="_a-IHgqlKEemKEInn1d0oDQ" type="StateMachine_NameLabel">
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_a-IHg6lKEemKEInn1d0oDQ" width="1291" height="25"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_a-IHg6lKEemKEInn1d0oDQ" width="1115" height="25"/>
       </children>
       <children xmi:type="notation:BasicCompartment" xmi:id="_a-IHhKlKEemKEInn1d0oDQ" type="StateMachine_RegionCompartment">
         <children xmi:type="notation:Shape" xmi:id="_a-IHhalKEemKEInn1d0oDQ" type="Region_Shape">
@@ -4809,12 +4809,12 @@
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_a-IHialKEemKEInn1d0oDQ"/>
           </children>
           <element xmi:type="uml:Region" href="Diagrams.uml#_a-HgcKlKEemKEInn1d0oDQ"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_a-IHiqlKEemKEInn1d0oDQ" width="1291" height="886"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_a-IHiqlKEemKEInn1d0oDQ" width="1115" height="886"/>
         </children>
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_a-IHi6lKEemKEInn1d0oDQ" y="25" width="1291" height="886"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_a-IHi6lKEemKEInn1d0oDQ" y="25" width="1115" height="886"/>
       </children>
       <element xmi:type="uml:StateMachine" href="Diagrams.uml#_YNHYcKlKEemKEInn1d0oDQ"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_a-IHjKlKEemKEInn1d0oDQ" x="30" y="30" width="1291" height="911"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_a-IHjKlKEemKEInn1d0oDQ" x="30" y="30" width="1115" height="911"/>
     </children>
     <styles xmi:type="notation:StringValueStyle" xmi:id="_a-IHjalKEemKEInn1d0oDQ" name="diagram_compatibility_version" stringValue="1.4.0"/>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_a-IHjqlKEemKEInn1d0oDQ"/>
@@ -4958,7 +4958,7 @@
     <edges xmi:type="notation:Connector" xmi:id="_47BYQKl6EemKEInn1d0oDQ" type="Transition_Edge" source="_Y5nRQKl6EemKEInn1d0oDQ" target="_JOAwgKl5EemKEInn1d0oDQ">
       <children xmi:type="notation:DecorationNode" xmi:id="_47BYQ6l6EemKEInn1d0oDQ" type="Transition_NameLabel">
         <styles xmi:type="notation:BooleanValueStyle" xmi:id="_5iaIYKl6EemKEInn1d0oDQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_47BYRKl6EemKEInn1d0oDQ" x="-311" y="-25"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_47BYRKl6EemKEInn1d0oDQ" x="-36" y="251"/>
       </children>
       <children xmi:type="notation:DecorationNode" xmi:id="_47BYRal6EemKEInn1d0oDQ" type="Transition_GuardLabel">
         <styles xmi:type="notation:BooleanValueStyle" xmi:id="_5ij5YKl6EemKEInn1d0oDQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
