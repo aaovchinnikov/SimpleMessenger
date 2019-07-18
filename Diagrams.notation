@@ -4309,9 +4309,9 @@
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_ixhm4aiQEemKEInn1d0oDQ"/>
       <element xmi:type="uml:Message" href="Diagrams.uml#_ixZEAKiQEemKEInn1d0oDQ"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ixhm4qiQEemKEInn1d0oDQ" points="[-10, 0, -10, -87]$[57, 0, 57, -87]$[57, 60, 57, -27]$[0, 60, 0, -27]"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ixhm4qiQEemKEInn1d0oDQ" points="[-10, 0, -10, -60]$[57, 0, 57, -60]$[57, 40, 57, -20]$[-10, 40, -10, -20]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ix2-EKiQEemKEInn1d0oDQ" id="(0.5,0.41460055096418735)"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ix3lIKiQEemKEInn1d0oDQ" id="(0.5,0.4972451790633609)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ix3lIKiQEemKEInn1d0oDQ" id="(0.5,0.4696969696969697)"/>
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_VTgtIKiREemKEInn1d0oDQ" type="Message_AsynchEdge" source="_RvX_YKiOEemKEInn1d0oDQ" target="_RvX_YKiOEemKEInn1d0oDQ">
       <children xmi:type="notation:DecorationNode" xmi:id="_VThUMKiREemKEInn1d0oDQ" type="Message_AsynchNameLabel">
@@ -4322,9 +4322,9 @@
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_VTgtIaiREemKEInn1d0oDQ"/>
       <element xmi:type="uml:Message" href="Diagrams.uml#_VS9TgKiREemKEInn1d0oDQ"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_VTgtIqiREemKEInn1d0oDQ" points="[-10, 0, -10, -60]$[57, 0, 57, -60]$[57, 60, 57, 0]$[-10, 60, -10, 0]"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_VTgtIqiREemKEInn1d0oDQ" points="[-10, 0, -10, -60]$[57, 0, 57, -60]$[57, 40, 57, -20]$[-10, 40, -10, -20]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_VTxy4KiREemKEInn1d0oDQ" id="(0.5,0.7176308539944903)"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_VTxy4aiREemKEInn1d0oDQ" id="(0.5,0.800275482093664)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_VTxy4aiREemKEInn1d0oDQ" id="(0.5,0.7727272727272727)"/>
     </edges>
   </notation:Diagram>
   <notation:Diagram xmi:id="_oAVewKk4EemKEInn1d0oDQ" type="PapyrusUMLSequenceDiagram" name="Sequence Sending" measurementUnit="Pixel">
