@@ -19,7 +19,7 @@ def receive_message():
     while True:
         try:
             msg = client_socket.recv(1024).decode("utf8")
-            msg_list.insert(tk.END, msg)
+            chat_list.insert(tk.END, msg)
         except OSError:  # Possibly client has left the chat.
             break
 
@@ -33,18 +33,18 @@ def on_closing(event=None):
 def choose_chat(event=None):  # event is passed by binders.
     send_message()
     registration.destroy()
-    sel = tk.Tk() #selection
-    sel.title("Simple Messenger")
-    sel.geometry("340x150")
-    label3 = tk.Label(sel, text = " Please choose somebody to chat        ",  bg = "lightgreen", font = 'arial 15')
-    label3.pack( anchor = tk.NW)
-    chat_frame = tk.Frame(sel)
-    chat_list = tk.Listbox(chat_frame, height=6, width=50, selectmode=SINGLE)
-    chat_list.pack(side=tk.LEFT, fill=tk.BOTH)
-    chat_frame.pack()
+    
 
-    chat_list.bind('<<ListboxSelect>>', chatting)
-    sel.mainloop()
+def chatting(event=None):  # event is passed by binders.
+    receive_message()
+    #name = client_socket.recv(1024).decode("utf8")
+    #chat_list.insert(tk.END, name)
+
+
+client_socket = socket(AF_INET, SOCK_STREAM)
+client_socket.connect(('localhost', 80))
+
+
 
 registration = tk.Tk() 
 registration.title("Simple Messenger")
@@ -58,38 +58,22 @@ entry_field.pack(side = tk.LEFT)
 entry_field.bind("<Return>", choose_chat)
 registration.geometry("340x150")
 registration.mainloop()
+sel = tk.Tk() #selection
+sel.title("Simple Messenger")
+sel.geometry("340x150")
+label3 = tk.Label(sel, text = " Please choose somebody to chat        ",  bg = "lightgreen", font = 'arial 15')
+label3.pack( anchor = tk.NW)
+chat_frame = tk.Frame(sel)
+chat_list = tk.Listbox(chat_frame, height=6, width=50)
 
 
+#chat_list.bind('<<ListboxSelect>>', chatting)
+chat_list.pack(side=tk.LEFT, fill=tk.BOTH)
+chat_list.pack()
+chat_frame.pack()
+sel.mainloop()
 
-'''
-
-main = tk.Tk()
-main.title("Messenger")
-
-tk.Label(main, text="select")
-
-messages_frame = tk.Frame(main)
-login = tk.StringVar()  # For the messages to be sent.
-login.set("Type your messages here.")
-scrollbar = tk.Scrollbar(messages_frame)  # To navigate through past messages.
-# Following will contain the messages.
-msg_list = tk.Listbox(messages_frame, height=15, width=50, yscrollcommand=scrollbar.set)
-scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
-msg_list.pack(side=tk.LEFT, fill=tk.BOTH)
-msg_list.pack()
-messages_frame.pack()
-
-entry_field = tk.Entry(main, textvariable=login)
-entry_field.bind("<Return>", send_message)
-entry_field.pack()
-send_button = tk.Button(main, text="Send", command=send_message)
-send_button.pack()
-
-main.protocol("WM_DELETE_WINDOW", on_closing)
-tk.mainloop()
-'''
-client_socket = socket(AF_INET, SOCK_STREAM)
-client_socket.connect(('localhost', 80))
+sel.protocol("WM_DELETE_WINDOW", on_closing) 
 
 receive_thread = Thread(target=receive_message)
 receive_thread.start()
