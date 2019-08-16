@@ -8,17 +8,44 @@ def accept_incoming_connections():
         client, client_address = SERVER.accept()
         print("%s:%s has connected." % client_address)
         addresses[client] = client_address
-        Thread(target=handle_client, args=(client,)).start()
+        th = Thread(target=handle_client, args=(client,))
+        th.start()
+        th.join()
+
 
 
 def handle_client(client):  # Takes client socket as argument.
     """Handles a single client connection."""
 
     name = client.recv(1024).decode("utf8")
-    welcome = '%s' % name
-    client.send(bytes(welcome, "utf8"))
+    #welcome = '%s' % name
     clients[client] = name
 
+    for c in clients:
+        if len(clients) == 1:
+            c.send(bytes("Nobody is now available. Please wait...*", "utf8"))
+            break
+        msg = ""
+        
+       
+        for i in clients:
+            if clients[c] != clients[i]:
+                cl = '%s' % clients[i]
+                msg = msg + cl + "*"
+        c.send(bytes(msg, "utf8"))
+"""
+    if name == bytes("{quit}", "utf8"):
+        client.send(bytes("{quit}", "utf8"))
+        client.close()
+        del clients[client]
+        for c in clients:
+            msg = ""                               
+            for i in clients:
+                if clients[c] != clients[i]:
+                    cl = '%s' % clients[i]
+                    msg = msg + cl + "*"
+            c.send(bytes(msg, "utf8"))
+        
     while True:
         msg = client.recv(1024).decode("utf8")
         msg_buf='%s' % msg
@@ -31,8 +58,17 @@ def handle_client(client):  # Takes client socket as argument.
             client.send(bytes("{quit}", "utf8"))
             client.close()
             del clients[client]
+            for c in clients:
+                msg = ""
+                               
+                for i in clients:
+                    if clients[c] != clients[i]:
+                        cl = '%s' % clients[i]
+                        msg = msg + cl + "*"
+                c.send(bytes(msg, "utf8"))
             break
 
+"""
 
 clients = {}
 addresses = {}
