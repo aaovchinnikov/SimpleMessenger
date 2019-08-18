@@ -63,6 +63,19 @@ def registration(event=None):  # event is passed by binders.
 
 def chatting(event=None):
     print("LOL")
+    chat = tk.Toplevel(main)
+    chat_frame1 = tk.Frame(chat)
+    chat_frame1.pack(side = tk.BOTTOM)
+    chat.geometry("340x150")
+    scrollbar1 = tk.Scrollbar(chat_frame1)
+    label4 = tk.Label(chat, text = "qwert")
+    label4.pack(side = tk.TOP)
+    chat_field = tk.Listbox(chat_frame1, height=10, width=50, yscrollcommand=scrollbar1.set)
+    chat_field.pack(side=tk.LEFT, fill=tk.BOTH)
+    chat_field.pack()
+    scrollbar1.pack(side=tk.RIGHT, fill=tk.Y) 
+
+
 
 
 main = tk.Tk() 
@@ -93,7 +106,6 @@ chat_list.bind('<Double-Button-1>', chatting)
 chat_frame.pack()
 scrollbar.pack(side=tk.RIGHT, fill=tk.Y) 
 
-#update_chat_list()
 
 main.protocol("WM_DELETE_WINDOW", on_closing) 
 
