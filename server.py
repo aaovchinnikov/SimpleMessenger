@@ -39,13 +39,7 @@ def handle_client(client):  # Takes client socket as argument.
         msg = client.recv(1024).decode("utf8")
         print(msg, name, sep=" ")
         msg_buf='%s' % msg
-        if msg != "{quit}":
-            for c in clients:
-                c.send(bytes(name+": " + msg_buf, "utf8"))
-    
-                    
-        else:
-            #client.send(bytes("{quit}", "utf8"))
+        if msg == "{quit}":
             client.close()
             del clients[client]
             for c in clients:
@@ -60,7 +54,16 @@ def handle_client(client):  # Takes client socket as argument.
                 c.send(bytes(msg, "utf8"))
             break
 
-    
+        else:
+            r = ""
+            for i in msg_buf:
+                if i != "$":
+                    r = r+i
+                else:
+                    break
+            for c in clients:
+                if clients[c] == r:
+                    c.send(bytes("$"+ name + "$" + msg_buf, "utf8"))
 
 
 
