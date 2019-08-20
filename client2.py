@@ -23,6 +23,11 @@ def on_closing(event=None):
     main.quit()
     
 
+def on_closing_chat(event=None):
+    global dialog
+    chat.withdraw()
+    dialog=0    
+
 def update_chat_list():
     global dialog
     global friend
@@ -143,7 +148,7 @@ entry_field1.pack(side = tk.BOTTOM)
 
 chat.withdraw()
 
-
+chat.protocol("WM_DELETE_WINDOW", on_closing_chat)
 main.protocol("WM_DELETE_WINDOW", on_closing) 
 
 client_socket = socket(AF_INET, SOCK_STREAM)
