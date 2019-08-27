@@ -17,53 +17,55 @@ def handle_client(client):  # Takes client socket as argument.
     """Handles a single client connection."""
 
     name = client.recv(1024).decode("utf8")
-    #welcome = '%s' % name
-    clients[client] = name
+    if name == "{quit}":
+        client.close()
+    else:
+        clients[client] = name
 
-    while True:
-        
-        for c in clients:
-            if len(clients) == 1:
-                c.send(bytes("Nobody is now available. Please wait...*", "utf8"))
-                break
-            msg = ""
+        while True:
             
-           
-            for i in clients:
-                if clients[c] != clients[i]:
-                    cl = '%s' % clients[i]
-                    msg = msg + cl + "*"
-            c.send(bytes(msg, "utf8"))
-        
-        
-        msg = client.recv(1024).decode("utf8")
-        print(msg, name, sep=" ")
-        msg_buf='%s' % msg
-        if msg == "{quit}":
-            client.close()
-            del clients[client]
             for c in clients:
                 if len(clients) == 1:
                     c.send(bytes("Nobody is now available. Please wait...*", "utf8"))
                     break
-                msg = ""                           
+                msg = ""
+                
+            
                 for i in clients:
-                    if clients[c] != clients[i]:
+                    if clients[c] != clients[i] or clients[c] == clients[i] and c != i:
                         cl = '%s' % clients[i]
                         msg = msg + cl + "*"
                 c.send(bytes(msg, "utf8"))
-            break
+            
+            
+            msg = client.recv(1024).decode("utf8")
+            print(msg, name, sep=" ")
+            msg_buf='%s' % msg
+            if msg == "{quit}":
+                client.close()
+                del clients[client]
+                for c in clients:
+                    if len(clients) == 1:
+                        c.send(bytes("Nobody is now available. Please wait...*", "utf8"))
+                        break
+                    msg = ""                           
+                    for i in clients:
+                        if clients[c] != clients[i]:
+                            cl = '%s' % clients[i]
+                            msg = msg + cl + "*"
+                    c.send(bytes(msg, "utf8"))
+                break
 
-        else:
-            r = ""
-            for i in msg_buf:
-                if i != "$":
-                    r = r+i
-                else:
-                    break
-            for c in clients:
-                if clients[c] == r:
-                    c.send(bytes("$"+ name + "$" + msg_buf, "utf8"))
+            else:
+                r = ""
+                for i in msg_buf:
+                    if i != "$":
+                        r = r+i
+                    else:
+                        break
+                for c in clients:
+                    if clients[c] == r:
+                        c.send(bytes("$"+ name + "$" + msg_buf, "utf8"))
 
 
 
