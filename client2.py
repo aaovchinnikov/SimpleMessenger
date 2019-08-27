@@ -22,13 +22,12 @@ def on_closing(event=None):
     client_socket.close()
     main.quit()
     
-
 def on_closing_chat(event=None):
     global dialog
     chat.withdraw()
     dialog=0    
 
-def update_chat_list():
+def receive_message():
     global dialog
     global friend
     global name
@@ -70,15 +69,20 @@ def update_chat_list():
             break
     
  
-
 def registration(event=None):  # event is passed by binders.
     """Function to introduce yourself"""
     global name
     name = txt.get()
-    client_socket.send(bytes(name, "utf8"))
-    label1.destroy()
-    label2.destroy()
-    entry_field.destroy()
+
+    if name != "":
+        client_socket.send(bytes(name, "utf8"))
+        label1.destroy()
+        label2.destroy()
+        entry_field.destroy()
+    else:
+        label2['text'] = "Name is null, enter your name"
+
+
 
 def chatting(event=None):
     global friend
@@ -86,7 +90,6 @@ def chatting(event=None):
     w = event.widget
     i = int(w.curselection()[0])
     friend = w.get(i)
-    #print(friend)
     global dialog
     
     dialog = 1
@@ -99,8 +102,8 @@ name=""
 main = tk.Tk() 
 main.title("Simple Messenger")
 
-label1 = tk.Label(main, text = "Welcome to Simple Messenger!         ",  bg = "lightgreen", font = 'arial 15')
-label1.pack(side = tk.TOP, anchor = tk.W)
+label1 = tk.Label(main, text = "Welcome to Simple Messenger!", bg = "lightgreen", font = 'arial 15', width = 340, anchor = tk.W)
+label1.pack(side = tk.TOP)
 
 label2 = tk.Label(main, text = "Please introduce yourself ", bg = "white", width = 300, height = 7, font='arial 12')
 label2.pack()
@@ -113,7 +116,7 @@ entry_field.pack(side = tk.LEFT)
 main.geometry("340x210")
 
 
-label3 = tk.Label(main, text = " Please choose somebody to chat        ",  bg = "lightgreen", font = 'arial 15')
+label3 = tk.Label(main, text = "Please choose somebody to chat",  bg = "lightgreen", font = 'arial 15', width = 340, anchor = tk.W)
 label3.pack(anchor = tk.NW)
 chat_frame = tk.Frame(main)
 scrollbar = tk.Scrollbar(chat_frame)
@@ -130,7 +133,7 @@ scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
 
 #dialog
 chat = tk.Toplevel(main)
-label4 = tk.Label(chat, text = friend, bg = "lightgreen", font = 'arial 14')
+label4 = tk.Label(chat, text = friend, bg = "lightgreen", font = 'arial 14', width = 340)
 label4.pack(side = tk.TOP)
 chat_frame1 = tk.Frame(chat)
 chat_frame1.pack()
@@ -154,6 +157,6 @@ main.protocol("WM_DELETE_WINDOW", on_closing)
 client_socket = socket(AF_INET, SOCK_STREAM)
 client_socket.connect(('localhost', 80))
 
-receive_thread = Thread(target=update_chat_list)
+receive_thread = Thread(target=receive_message)
 receive_thread.start()
 main.mainloop()
