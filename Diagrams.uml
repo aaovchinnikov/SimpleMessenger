@@ -86,6 +86,21 @@
         <subvertex xmi:type="uml:State" xmi:id="_kEeKMM9YEembwep3LC7dNg" name="Передача сообщения на сервер"/>
       </region>
     </packagedElement>
+    <packagedElement xmi:type="uml:Device" xmi:id="__RmzcM9kEembwep3LC7dNg" name="Телефон/ПК пользователя">
+      <nestedClassifier xmi:type="uml:ExecutionEnvironment" xmi:id="_JvPHkM9zEembwep3LC7dNg" name="Visual Studio Code" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Node" xmi:id="_HOGI4M9lEembwep3LC7dNg" name="Сервер">
+      <nestedNode xmi:type="uml:ExecutionEnvironment" xmi:id="_kuYOkM9zEembwep3LC7dNg" name="Visual Sudio Code"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_WG9akM9lEembwep3LC7dNg" memberEnd="_WHatkM9lEembwep3LC7dNg _WHciwM9lEembwep3LC7dNg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WHY4YM9lEembwep3LC7dNg" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WHY4Yc9lEembwep3LC7dNg" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_WHatkM9lEembwep3LC7dNg" name="сервер" type="_HOGI4M9lEembwep3LC7dNg" association="_WG9akM9lEembwep3LC7dNg"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_WHciwM9lEembwep3LC7dNg" name="телефон/пк пользователя" type="__RmzcM9kEembwep3LC7dNg" association="_WG9akM9lEembwep3LC7dNg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Artifact" xmi:id="_itJEsM91Eembwep3LC7dNg" name="client.py"/>
+    <packagedElement xmi:type="uml:Artifact" xmi:id="_qwsrcM91Eembwep3LC7dNg" name="server.py"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_8uxJEKMLEemKQZ3Ow7yDwQ" name="Activity Registration Messenger">
     <packagedElement xmi:type="uml:Activity" xmi:id="_DCKZwKMMEemKQZ3Ow7yDwQ" name="Зарегистрироваться" node="_AMAyYKMUEemKQZ3Ow7yDwQ _4wPcAKMhEemKQZ3Ow7yDwQ _Ojfs8KMiEemKQZ3Ow7yDwQ _jCdPAKMjEemKQZ3Ow7yDwQ _3UXB8KMjEemKQZ3Ow7yDwQ _kl78QKPZEemKQZ3Ow7yDwQ _g24tEKPYEemKQZ3Ow7yDwQ _yLvyAKPWEemKQZ3Ow7yDwQ _io0ccKMiEemKQZ3Ow7yDwQ" group="_UxidIKPeEemKQZ3Ow7yDwQ _enMToKPeEemKQZ3Ow7yDwQ">
