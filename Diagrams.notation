@@ -2857,6 +2857,25 @@
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_X-0bcM9iEembwep3LC7dNg" id="(0.0,0.20408163265306123)"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_X-0bcc9iEembwep3LC7dNg" id="(0.2575107296137339,1.0)"/>
     </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_Sh9nkNAaEembwep3LC7dNg" type="Transition_Edge" source="_djEvMM9XEembwep3LC7dNg" target="_XKXgsM9XEembwep3LC7dNg">
+      <children xmi:type="notation:DecorationNode" xmi:id="_SiqLINAaEembwep3LC7dNg" type="Transition_NameLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_dD8YkNAaEembwep3LC7dNg" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Si4NkNAaEembwep3LC7dNg" x="-20" y="146"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_Si4NkdAaEembwep3LC7dNg" type="Transition_GuardLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_dEGJkNAaEembwep3LC7dNg" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Si4NktAaEembwep3LC7dNg" x="-39" y="21"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_Si4Nk9AaEembwep3LC7dNg" type="Transition_StereotypeLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_dEP6kNAaEembwep3LC7dNg" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Si4NlNAaEembwep3LC7dNg" x="-1" y="58"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_Sh9nkdAaEembwep3LC7dNg"/>
+      <element xmi:type="uml:Transition" href="Diagrams.uml#_Ry6wQNAaEembwep3LC7dNg"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Sh9nktAaEembwep3LC7dNg" points="[640, 300, -643984, -643984]$[700, 300, -643984, -643984]$[700, 200, -643984, -643984]$[640, 200, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_S2EPUNAaEembwep3LC7dNg" id="(0.9929078014184397,0.40816326530612246)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_S2EPUdAaEembwep3LC7dNg" id="(0.9929078014184397,0.40816326530612246)"/>
+    </edges>
   </notation:Diagram>
   <notation:Diagram xmi:id="_9PntkM9kEembwep3LC7dNg" type="PapyrusUMLDeploymentDiagram" name="Deployment" measurementUnit="Pixel">
     <children xmi:type="notation:Shape" xmi:id="__Rqd0M9kEembwep3LC7dNg" type="Device_Shape">

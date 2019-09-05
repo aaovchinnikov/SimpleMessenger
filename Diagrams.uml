@@ -75,6 +75,7 @@
         <transition xmi:type="uml:Transition" xmi:id="_-8rMoM9hEembwep3LC7dNg" name="[сообщение принято]" source="_GuPQAM9YEembwep3LC7dNg" target="_SgYd0M9XEembwep3LC7dNg"/>
         <transition xmi:type="uml:Transition" xmi:id="_I6oqkM9iEembwep3LC7dNg" name="[сообщение принято]" source="_Xqk1UM9YEembwep3LC7dNg" target="_Xqk1UM9YEembwep3LC7dNg"/>
         <transition xmi:type="uml:Transition" xmi:id="_X-OlkM9iEembwep3LC7dNg" name="[нажата кнопка закрытия чата]" source="_Xqk1UM9YEembwep3LC7dNg" target="_GuPQAM9YEembwep3LC7dNg"/>
+        <transition xmi:type="uml:Transition" xmi:id="_Ry6wQNAaEembwep3LC7dNg" name="[логин не удовлетворяет правилам]" source="_di8zYM9XEembwep3LC7dNg" target="_XKT2UM9XEembwep3LC7dNg"/>
         <subvertex xmi:type="uml:State" xmi:id="_Evzp4M9XEembwep3LC7dNg" name="Ожидание"/>
         <subvertex xmi:type="uml:State" xmi:id="_SgYd0M9XEembwep3LC7dNg" name="Отображение уведомления о новом сообщении"/>
         <subvertex xmi:type="uml:State" xmi:id="_XKT2UM9XEembwep3LC7dNg" name="Запрос логина"/>
