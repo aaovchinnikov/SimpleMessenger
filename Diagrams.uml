@@ -173,6 +173,41 @@
       <message xmi:type="uml:Message" xmi:id="_H8YWIM-wEembwep3LC7dNg" name="напечатать сообщение" messageSort="asynchCall" receiveEvent="_H8aLUM-wEembwep3LC7dNg" sendEvent="_H8ZkQM-wEembwep3LC7dNg"/>
       <message xmi:type="uml:Message" xmi:id="_PSLfAM-wEembwep3LC7dNg" name="выбрать собеседника" messageSort="asynchCall" receiveEvent="_PSNUMM-wEembwep3LC7dNg" sendEvent="_PSMtIM-wEembwep3LC7dNg"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Interaction" xmi:id="_ovdKoM-wEembwep3LC7dNg" name="Receiving">
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_9YTd8M-wEembwep3LC7dNg" name=": Пользователь" coveredBy="_LoatkM-xEembwep3LC7dNg _SRlZ8M-xEembwep3LC7dNg _WGwUsM-xEembwep3LC7dNg _Y5OcUM-xEembwep3LC7dNg _nEHNsM-xEembwep3LC7dNg _nEH0wM-xEembwep3LC7dNg _eH12QM-xEembwep3LC7dNg _kDofQM-xEembwep3LC7dNg _bmnPoM-xEembwep3LC7dNg _QNOVgM-xEembwep3LC7dNg"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_AL_GgM-xEembwep3LC7dNg" name=": Приложение" coveredBy="_Fpc0wM-xEembwep3LC7dNg _LoZfcM-xEembwep3LC7dNg _SRmoEM-xEembwep3LC7dNg _WGxi0M-xEembwep3LC7dNg _Y5N1QM-xEembwep3LC7dNg _eH2dUM-xEembwep3LC7dNg _kDpGUM-xEembwep3LC7dNg _hL6rQM-xEembwep3LC7dNg _hL5dIM-xEembwep3LC7dNg _U6IJgM-xEembwep3LC7dNg _JKBYgM-xEembwep3LC7dNg"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_Ccja8M-xEembwep3LC7dNg" name=": Сервер" coveredBy="_FpbmoM-xEembwep3LC7dNg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_FpbmoM-xEembwep3LC7dNg" name="Message4SendEvent" covered="_Ccja8M-xEembwep3LC7dNg" message="_Fpa_kM-xEembwep3LC7dNg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Fpc0wM-xEembwep3LC7dNg" name="Message4ReceiveEvent" covered="_AL_GgM-xEembwep3LC7dNg" message="_Fpa_kM-xEembwep3LC7dNg"/>
+      <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_JKBYgM-xEembwep3LC7dNg" name="ActionExecutionSpecification7" covered="_AL_GgM-xEembwep3LC7dNg" finish="_LoZfcM-xEembwep3LC7dNg" start="_Fpc0wM-xEembwep3LC7dNg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_LoZfcM-xEembwep3LC7dNg" name="Message9SendEvent" covered="_AL_GgM-xEembwep3LC7dNg" message="_LoYRUM-xEembwep3LC7dNg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_LoatkM-xEembwep3LC7dNg" name="Message9ReceiveEvent" covered="_9YTd8M-wEembwep3LC7dNg" message="_LoYRUM-xEembwep3LC7dNg"/>
+      <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_QNOVgM-xEembwep3LC7dNg" name="ActionExecutionSpecification11" covered="_9YTd8M-wEembwep3LC7dNg" finish="_SRlZ8M-xEembwep3LC7dNg" start="_LoatkM-xEembwep3LC7dNg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_SRlZ8M-xEembwep3LC7dNg" name="Message13SendEvent" covered="_9YTd8M-wEembwep3LC7dNg" message="_SRjkwM-xEembwep3LC7dNg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_SRmoEM-xEembwep3LC7dNg" name="Message13ReceiveEvent" covered="_AL_GgM-xEembwep3LC7dNg" message="_SRjkwM-xEembwep3LC7dNg"/>
+      <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_U6IJgM-xEembwep3LC7dNg" name="ActionExecutionSpecification15" covered="_AL_GgM-xEembwep3LC7dNg" finish="_Y5N1QM-xEembwep3LC7dNg" start="_SRmoEM-xEembwep3LC7dNg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_WGwUsM-xEembwep3LC7dNg" name="Message17SendEvent" covered="_9YTd8M-wEembwep3LC7dNg" message="_WGvGkM-xEembwep3LC7dNg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_WGxi0M-xEembwep3LC7dNg" name="Message17ReceiveEvent" covered="_AL_GgM-xEembwep3LC7dNg" message="_WGvGkM-xEembwep3LC7dNg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Y5N1QM-xEembwep3LC7dNg" name="Message20SendEvent" covered="_AL_GgM-xEembwep3LC7dNg" message="_Y5MAEM-xEembwep3LC7dNg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Y5OcUM-xEembwep3LC7dNg" name="Message20ReceiveEvent" covered="_9YTd8M-wEembwep3LC7dNg" message="_Y5MAEM-xEembwep3LC7dNg"/>
+      <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_bmnPoM-xEembwep3LC7dNg" name="ActionExecutionSpecification22" covered="_9YTd8M-wEembwep3LC7dNg" finish="_eH12QM-xEembwep3LC7dNg" start="_Y5OcUM-xEembwep3LC7dNg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_nEHNsM-xEembwep3LC7dNg" name="Message31SendEvent" covered="_9YTd8M-wEembwep3LC7dNg" message="_nEF_kM-xEembwep3LC7dNg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_nEH0wM-xEembwep3LC7dNg" name="Message31ReceiveEvent" covered="_9YTd8M-wEembwep3LC7dNg" message="_nEF_kM-xEembwep3LC7dNg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_eH12QM-xEembwep3LC7dNg" name="Message24SendEvent" covered="_9YTd8M-wEembwep3LC7dNg" message="_eH0oIM-xEembwep3LC7dNg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_eH2dUM-xEembwep3LC7dNg" name="Message24ReceiveEvent" covered="_AL_GgM-xEembwep3LC7dNg" message="_eH0oIM-xEembwep3LC7dNg"/>
+      <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_hL5dIM-xEembwep3LC7dNg" name="ActionExecutionSpecification26" covered="_AL_GgM-xEembwep3LC7dNg" finish="_hL6rQM-xEembwep3LC7dNg" start="_eH2dUM-xEembwep3LC7dNg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_kDofQM-xEembwep3LC7dNg" name="Message28SendEvent" covered="_9YTd8M-wEembwep3LC7dNg" message="_kDnRIM-xEembwep3LC7dNg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_kDpGUM-xEembwep3LC7dNg" name="Message28ReceiveEvent" covered="_AL_GgM-xEembwep3LC7dNg" message="_kDnRIM-xEembwep3LC7dNg"/>
+      <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_hL6rQM-xEembwep3LC7dNg" name="ActionExecutionSpecification26Finish" covered="_AL_GgM-xEembwep3LC7dNg" execution="_hL5dIM-xEembwep3LC7dNg"/>
+      <message xmi:type="uml:Message" xmi:id="_Fpa_kM-xEembwep3LC7dNg" name="переслать сообщение на ПК" messageSort="asynchCall" receiveEvent="_Fpc0wM-xEembwep3LC7dNg" sendEvent="_FpbmoM-xEembwep3LC7dNg"/>
+      <message xmi:type="uml:Message" xmi:id="_LoYRUM-xEembwep3LC7dNg" name="оповестить о новом сообщении" messageSort="asynchCall" receiveEvent="_LoatkM-xEembwep3LC7dNg" sendEvent="_LoZfcM-xEembwep3LC7dNg"/>
+      <message xmi:type="uml:Message" xmi:id="_SRjkwM-xEembwep3LC7dNg" name="открыть приложение" messageSort="asynchCall" receiveEvent="_SRmoEM-xEembwep3LC7dNg" sendEvent="_SRlZ8M-xEembwep3LC7dNg"/>
+      <message xmi:type="uml:Message" xmi:id="_WGvGkM-xEembwep3LC7dNg" name="перейти в чат" messageSort="asynchCall" receiveEvent="_WGxi0M-xEembwep3LC7dNg" sendEvent="_WGwUsM-xEembwep3LC7dNg"/>
+      <message xmi:type="uml:Message" xmi:id="_Y5MAEM-xEembwep3LC7dNg" name="отобразить чат" messageSort="reply" receiveEvent="_Y5OcUM-xEembwep3LC7dNg" sendEvent="_Y5N1QM-xEembwep3LC7dNg"/>
+      <message xmi:type="uml:Message" xmi:id="_eH0oIM-xEembwep3LC7dNg" name="[при желании] ответить на сообщение" messageSort="asynchCall" receiveEvent="_eH2dUM-xEembwep3LC7dNg" sendEvent="_eH12QM-xEembwep3LC7dNg"/>
+      <message xmi:type="uml:Message" xmi:id="_kDnRIM-xEembwep3LC7dNg" name="закрыть приложение" messageSort="asynchCall" receiveEvent="_kDpGUM-xEembwep3LC7dNg" sendEvent="_kDofQM-xEembwep3LC7dNg"/>
+      <message xmi:type="uml:Message" xmi:id="_nEF_kM-xEembwep3LC7dNg" name="прочитать сообщение" messageSort="asynchCall" receiveEvent="_nEH0wM-xEembwep3LC7dNg" sendEvent="_nEHNsM-xEembwep3LC7dNg"/>
+    </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Package" xmi:id="_8uxJEKMLEemKQZ3Ow7yDwQ" name="Activity Registration Messenger">
     <packagedElement xmi:type="uml:Activity" xmi:id="_DCKZwKMMEemKQZ3Ow7yDwQ" name="Зарегистрироваться" node="_AMAyYKMUEemKQZ3Ow7yDwQ _4wPcAKMhEemKQZ3Ow7yDwQ _Ojfs8KMiEemKQZ3Ow7yDwQ _jCdPAKMjEemKQZ3Ow7yDwQ _3UXB8KMjEemKQZ3Ow7yDwQ _kl78QKPZEemKQZ3Ow7yDwQ _g24tEKPYEemKQZ3Ow7yDwQ _yLvyAKPWEemKQZ3Ow7yDwQ _io0ccKMiEemKQZ3Ow7yDwQ" group="_UxidIKPeEemKQZ3Ow7yDwQ _enMToKPeEemKQZ3Ow7yDwQ">
